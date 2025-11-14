@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* center the thumbnails */
+.carousel .thumbs-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* optional: thumbnail size adjust */
+.carousel .thumb {
+  margin: 0 5px;
+  border-radius: 8px;
+}
+
+/* optional: remove border highlight if you want a cleaner look */
+.carousel .thumb.selected {
+  border: 2px solid #ffb400; /* তোমার পছন্দমতো রঙ */
+}
+
+/* Make main banner images smaller */
+.carousel .slide img {
+  height: 400px; /* তোমার ইচ্ছামতো height কমাও */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Center thumbnails */
+.carousel .thumbs-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: thumbnails style */
+.carousel .thumb {
+  margin: 0 5px;
+  border-radius: 8px;
+}
+
+.carousel .thumb.selected {
+  border: 2px solid #ffb400;
+}
+
+.bgimg{
+  background-image: url(../src/assets/home/chef-service.jpg);
+}
